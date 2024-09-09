@@ -20,10 +20,10 @@ public class CalculadoraTarifasTemporadaAlta extends CalculadoraTarifas
 		int distancia = super.calcularDistanciaVuelo​(ruta);
 		return this.COSTO_POR_KM * distancia;
 	}
+
 	@Override
-	public double calcularPorcentajeDescuento​(Cliente cliente)
-	{
-		//No hay descuentos para esta tipo de temporada.
+	protected double calcularPorcentajeDescuento(Cliente cliente) {
+		// TODO Auto-generated method stub
 		return 0.0;
 	}
 }

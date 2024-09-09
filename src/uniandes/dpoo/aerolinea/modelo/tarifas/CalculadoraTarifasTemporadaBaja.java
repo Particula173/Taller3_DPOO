@@ -36,9 +36,9 @@ public class CalculadoraTarifasTemporadaBaja extends CalculadoraTarifas
 		}
 		return 0;
 	}
+
 	@Override
-	public double calcularPorcentajeDescuento​(Cliente cliente)
-	{
+	protected double calcularPorcentajeDescuento(Cliente cliente) {
 		if (cliente.getTipoCliente().equals("Corporativo"))
 		{
 			return 1;
